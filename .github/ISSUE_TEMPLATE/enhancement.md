@@ -1,7 +1,7 @@
 ---
 name: Enhancement
 about: New idea for this project
-title: "[FEATURE]"
+title: ''
 labels: enhancement
 assignees: RyanBeiden
 
