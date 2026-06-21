@@ -14,7 +14,19 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    commit-message:
+      prefix: "npm"
+    groups:
+      npm:
+        patterns:
+          - "*"
   - package-ecosystem: "composer"
     directory: "/"
     schedule:
       interval: "daily"
+    commit-message:
+      prefix: "Composer"
+    groups:
+      composer:
+        patterns:
+          - "*"
