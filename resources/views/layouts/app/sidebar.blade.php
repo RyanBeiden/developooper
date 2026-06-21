@@ -15,7 +15,7 @@
                     <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="swords" href="/artifacts" wire:navigate>
+                    <flux:sidebar.item icon="swords" href="/artifacts">
                         {{ __('Artifacts') }}
                     </flux:sidebar.item>
                     <flux:sidebar.group expandable expanded="false" heading="Monitoring" class="grid">
