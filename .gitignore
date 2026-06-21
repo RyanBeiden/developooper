@@ -13,6 +13,7 @@
 .phpactor.json
 .phpunit.result.cache
 .junie
+dump.rdb
 Homestead.json
 Homestead.yaml
 npm-debug.log
