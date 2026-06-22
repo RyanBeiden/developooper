@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2c126daa352f292d82252bd304e2ead",
+    "content-hash": "232119358a12bddb3151dad881201384",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5974,6 +5974,62 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.3"
             },
             "time": "2026-06-18T03:57:49+00:00"
+        },
+        {
+            "name": "ryanbeiden/artifacts-php-sdk",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "../../workspace/artifacts-php-sdk",
+                "reference": "4c66f5533e0cdd28edbc6247e8fda1a837d35fa0"
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^7.3",
+                "guzzlehttp/psr7": "^1.7 || ^2.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.5",
+                "phpunit/phpunit": "^8.0 || ^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ArtifactsMmo\\": "/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "ArtifactsMmo\\Test\\": "test/"
+                }
+            },
+            "license": [
+                "unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "OpenAPI",
+                    "homepage": "https://openapi-generator.tech"
+                }
+            ],
+            "description": "Artifacts is an API-based MMO game where you can manage 5 characters to explore, fight, gather resources, craft items and much more.  Website: https://artifactsmmo.com/  Documentation: https://docs.artifactsmmo.com/  OpenAPI Spec: https://api.artifactsmmo.com/openapi.json",
+            "homepage": "https://openapi-generator.tech",
+            "keywords": [
+                "api",
+                "openapi",
+                "openapi-generator",
+                "openapitools",
+                "php",
+                "rest",
+                "sdk"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "ryangjchandler/blade-capture-directive",
@@ -15177,7 +15233,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "ryanbeiden/artifacts-php-sdk": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

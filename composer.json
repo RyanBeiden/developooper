@@ -5,6 +5,15 @@
     "description": "The official Laravel starter kit for Livewire.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../workspace/artifacts-php-sdk",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^8.3",
         "codeat3/blade-fluentui-system-icons": "^1.35",
@@ -18,7 +27,8 @@
         "livewire/blaze": "^1.0",
         "livewire/flux": "^2.13.1",
         "livewire/livewire": "^4.1",
-        "predis/predis": "^3.5"
+        "predis/predis": "^3.5",
+        "ryanbeiden/artifacts-php-sdk": "@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24",
@@ -70,7 +80,7 @@
             "@test"
         ],
         "types:check": [
-            "phpstan analyse"
+            "phpstan analyse --memory-limit=1G"
         ],
         "test": [
             "@php artisan config:clear --ansi",
